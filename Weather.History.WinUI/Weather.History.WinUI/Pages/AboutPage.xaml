@@ -1,0 +1,27 @@
+﻿<Page
+    x:Class="Weather.History.WinUI.Pages.AboutPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:local="using:Weather.History.WinUI.Pages"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}"
+    mc:Ignorable="d">
+
+    <ScrollViewer
+        Height="270"
+        HorizontalScrollBarVisibility="Disabled"
+        HorizontalScrollMode="Enabled"
+        IsVerticalScrollChainingEnabled="True"
+        ManipulationCompleted="Control1_ManipulationCompleted"
+        VerticalScrollBarVisibility="Visible"
+        VerticalScrollMode="Enabled"
+        ZoomMode="Enabled">
+        <Image
+            HorizontalAlignment="Left"
+            VerticalAlignment="Top"
+            AutomationProperties.Name="cliff"
+            Source="ms-appx:///Assets/CalendarView.png"
+            Stretch="None" />
+    </ScrollViewer>
+</Page>
